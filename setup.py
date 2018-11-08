@@ -19,13 +19,13 @@ petlink32_c_module = Extension('petlink.petlink32_c', ['petlink/petlink32_c.c'])
 
 setup(
     name='petlink',
-    version='0.3.0',
+    version='0.3.2',
     author='Stefano Pedemonte',
     author_email='stefano.pedemonte@gmail.com',
     packages=['petlink', 'petlink.examples', 'petlink.tests'], 
     ext_modules=[petlink32_c_module, ],
     test_suite = "petlink.tests", 
-    url='http://www.occiput.io/',
+    url='http://occiput.scienceontheweb.net/',
     license='LICENSE.txt',
     description='Decode and encode PETlink streams.',
     long_description=open('README.rst').read(),

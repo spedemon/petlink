@@ -294,7 +294,7 @@ class PET_Interface_Petlink32():
 
     def __del__(self): 
         free_memory() 
-        print "Dynamic PET data structures deallocated. "    
+        print("Dynamic PET data structures deallocated. ")
 
 
 

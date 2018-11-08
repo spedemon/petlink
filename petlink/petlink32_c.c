@@ -121,7 +121,7 @@ Print n as a binary number
 */
 void printbits(int n) 
 {
-    unsigned int i, step;
+    int i, step;
 
     if (0 == n)  /* For simplicity's sake, I treat 0 as a special case*/
     {
