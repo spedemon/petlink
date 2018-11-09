@@ -19,7 +19,7 @@ petlink32_c_module = Extension('petlink.petlink32_c', ['petlink/petlink32_c.c'])
 
 setup(
     name='petlink',
-    version='0.3.2',
+    version='0.3.3',
     author='Stefano Pedemonte',
     author_email='stefano.pedemonte@gmail.com',
     packages=['petlink', 'petlink.examples', 'petlink.tests'], 
