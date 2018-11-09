@@ -6,7 +6,7 @@
 # Martinos Center for Biomedical Imaging, Harvard University/MGH, Boston
 # Dec. 2013, Boston
 
-__all__ = ['PET_Interface_Petlink32'] 
+#__all__ = ['PET_Interface_Petlink32'] 
 
 from simplewrap import *
 
@@ -31,11 +31,14 @@ class ErrorInCFunction(Exception):
         return "'%s' returned by the C Function '%s'. %s"%(self.status_msg,self.function_name,self.msg)
 
 
+
+    
 # Load library
-(found,fullpath,path) = find_c_library("petlink32_c",[localpath(),])
+(found,fullpath,path) = find_c_library("petlink32_c",[localpath(),], print_debug=False)
 if found: 
     petlink32_c = load_c_library(fullpath)
 else: 
+    find_c_library("petlink32_c",[localpath(),], print_debug=True)
     raise LibraryNotFound("petlink32_c") 
 
 
