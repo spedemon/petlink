@@ -10,11 +10,14 @@ with Python.
 Installation
 ============
 
-pip install petlink
+pip3 install petlink
 
 or download source files, uncompress, at the command line cd to the downloaded folder and run: 
 
-python setup.py build test install 
+python setup.pu build_ext --inplace
+python setup.py build install
+pytest
+
 
 
 
